@@ -1,11 +1,15 @@
 package com.java.myself;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class ArrayTest {
 	public static void main(String[] args){
 		int[] arr = {1,2,3,4,6,5,7,8};
 		String[] strarray = {"","星期一","星期二","星期三","星期四","星期五","星期六","星期日"};
+		
+		String string = Arrays.toString(arr);
+		System.out.println(string);
 		
 		//查表法
 		Scanner sc = new Scanner(System.in);
