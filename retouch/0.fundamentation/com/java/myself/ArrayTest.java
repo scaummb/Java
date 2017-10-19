@@ -4,12 +4,14 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class ArrayTest {
+	int a ;
 	public static void main(String[] args){
 		int[] arr = {1,2,3,4,6,5,7,8};
 		String[] strarray = {"","星期一","星期二","星期三","星期四","星期五","星期六","星期日"};
 		
 		String string = Arrays.toString(arr);
 		System.out.println(string);
+		printArray(strarray);
 		
 		//查表法
 		Scanner sc = new Scanner(System.in);
@@ -23,14 +25,28 @@ public class ArrayTest {
 		int index1 = indexOfArray(arr,8);
 		System.out.println(index1);
 	}
-	public static void printArray(int[] arr) {
+//	public static void printArray(String[] arr) {
+	public static  void printArray(String[] arr) {	
 		System.out.print("[");
+/*    不能使用this、super
+		super.a = 0;
+		this.a = 0;
+ * */	
+/*
+		不能对非静态字段 a 进行静态引用
+		a = 100;
+*/
 		for (int i=0; i<arr.length; i++) {
 			if (i <= arr.length-1) {
 				System.out.print(arr[i] +", ");
 			}
 			System.out.print(arr[i]);
 		}
+		//Java5 新特性，foreach 循环
+/*		for (String i : arr){
+			System.out.print("88");
+			System.out.println(i + ",");
+		}*/
 		System.out.println("]");
 	}
 

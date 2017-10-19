@@ -35,6 +35,12 @@ class Bubble{
 		for (int a=0; a<arr.length; a++){
 			System.out.println("序列的第"+a+"元素是："+arr[a]);
 		}
+		System.out.println("foreach..");
+		for(int i : arr){
+			System.out.print(i+",");
+		}
+//		System.out.println("");
+		System.out.println("\nforeach over..");
 		return arr;
 	}
 }
