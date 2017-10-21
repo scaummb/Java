@@ -18,7 +18,8 @@ class SelectionSort{
 				a[i] = a[k];
 				a[k] = temp;
 			}
-		}*/
+		}
+*/
 		//**********2-right
         for (int i = 0; i < n; i++) {
             int k = i;
@@ -50,13 +51,34 @@ class SelectionSort{
 //	}
 	
 	}
+	public static void selectionSort2(int[] a){
+		int l = a.length;
+		int temp;
+		for(int i = 0; i< l; i++){
+			int k = i;
+			for(int j = i+1; j<l; j++ ){
+				if(a[j]<a[k]){
+					k = j;//aim to find out the smallest one.
+				}
+			}
+			if(k != i){
+				temp = a[i];
+				a[i] = a[k];
+				a[k] = temp;
+			}					
+		}
+		System.out.println("2017/10/21");
+		System.out.println(Arrays.toString(a));
+	}
 }
 public class SelectionSorting {
 
 	public static void main(String[] args) {
 		SelectionSort ss = new SelectionSort();
-		int[] a = {9,3,6,14,5,6,6,5};
-		ss.selectionSort(a);
+		int[] a = {9,8,7,6,5,4,3,2,1,0};
+//		ss.selectionSort(a);
+		ss.selectionSort2(a);
+		
 	}
 
 }

@@ -7,17 +7,22 @@ import java.util.Arrays;
  * */
 
 public class StrightInsertion {
+	int k ;
 	public static void main(String[] args){
 		int[] arr = {12,15,13,46,55,1,5,3};
 		StrightInsertionSort  sis = new StrightInsertionSort();
 		sis.strightinsertion(arr);
 		System.out.println("********");
-		strightinsertion(arr);
+//		strightinsertion(arr);
 		
 	}
-	
+	public void a(){}
 	public static void strightinsertion(int [] arr){
 		int tmp ;
+		//不能对非静态字段 k 进行静态引用
+//		k = 10;
+		//不能对类型 StrightInsertion 中的非静态方法 a（）进行静态引用
+//		a();
 		for (int i=1; i<arr.length; i++){
 			for(int j=i; j>0; j--){
 				if (arr[j]<arr[j-1]){
@@ -45,5 +50,23 @@ class StrightInsertionSort{
 			arr[j+1] = temp;
 		}
 		System.out.println(Arrays.toString(arr));
+	}
+	
+	public void strightinsertion2(int [] arr){
+		for(int i = 1;i<arr.length;i++){
+			int j = i-1;//previous
+			int temp = arr[i];//latter
+//			while(j>=0 && arr[j]>temp){
+//				arr[j+1] = arr[j];//if the previous bigger than the latter
+//				j--;
+//			}
+			for(;j>=0;j--){
+				//if the previous bigger than the latter
+				if(arr[j]>temp){
+					arr[j] = temp;
+				}
+			}
+			
+		}
 	}
 }
