@@ -1,5 +1,4 @@
 package com.code.algorithm;
-import java.lang.Math;
 
 public class NarcissusNumber {
 	public static void main(String[] args){

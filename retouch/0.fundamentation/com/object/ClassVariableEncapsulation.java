@@ -1,5 +1,4 @@
 package com.object;
-import  com.object.ClassEncapsulation;
 
 public class ClassVariableEncapsulation {
 	public static void main(String [] args){
