@@ -29,20 +29,24 @@ class DogTwo extends AnimalTwo {
 	public void show() {
 		System.out.println("show dog");
 	}
-	public static void method() {
+	public static void method(){
 		System.out.println("method dog");
+	}
+	public  void method2() {
+		System.out.println("method dog..wangwang");
 	}
 }
 public class PolymorphicTestTow {
 
 	public static void main(String[] args) {
-		//多态
+		//多态，使用的方法其实是父类的定义好的方法，而指向了子类，表示假如子类有方法复写，就会使用它
 		AnimalTwo a = new DogTwo();
 		System.out.println(a.age);
 		//System.out.println(a.num);
 		a.show();
-
 		a.method();
+		
+//		a.method2();//没有为类型 AnimalTwo 定义方法 methodd（）
 
 	}
 
