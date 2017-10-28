@@ -2,10 +2,10 @@ package com.interfaceTest;
 
 //接口，定义了一个方法
 interface IntCompare{
-	public int cmp(int a,int b){}
+	public int cmp(int a,int b);
 }
 
-class Cmp1 implements IntCmpare{
+class Cmp1 implements IntCompare{
 	public int cmp(int a,int b){
 		if (a > b){
 			return 1;
@@ -46,7 +46,17 @@ public class TestTwo {
 	}
 
 	public static void main(String[] args) {
-
+		int [] array1 = {7,6,8,55,11,2,3,9};
+		insertSort(array1, new Cmp1());
+		System.out.println("升序排列： ");
+		for (int i = 0;i< array1.length;i++)
+			System.out.print(array1[i]+" ");
+		System.out.println();
+		int [] array2 = {8 ,6,2,55,44,11,3,2};
+		insertSort(array2, new Cmp2());
+		System.out.println("降序排列： ");
+		for (int i = 0;i< array2.length;i++)
+			System.out.print(array2[i]+" ");
 	}
 
 }

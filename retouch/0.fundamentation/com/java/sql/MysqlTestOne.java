@@ -19,10 +19,10 @@ public class MysqlTestOne {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try{
-			Class. forName(driver);
-			con = DriverManager.getConnection(url, user, password);
-			stmt = con.createStatement();
-			stmt.execute("create table classtable(classmateId int NOT NULL AUTO_INCREMENT ,"
+			Class. forName(driver);//加载驱动，Class.forName
+			con = DriverManager.getConnection(url, user, password);//建立连接
+			stmt = con.createStatement();//建立statement对象
+			stmt.execute("create table classtable(classmateId int NOT NULL AUTO_INCREMENT ,"//执行SQL语句
 					+ "name char(20) NOT NULL,"
 					+ "sex char(8) NOT NULL,"
 					+ "birthdate int NOT NULL,"
@@ -33,7 +33,7 @@ public class MysqlTestOne {
 //			stmt.execute("select * from class ;");
 //			stmt.execute("insert into Employee values(3,'James1 ',2)");
 //			stmt.execute("insert int Employee values(2,'James2 ',26)");
-			rs = stmt. executeQuery("select * from classtable");
+			rs = stmt. executeQuery("select * from classtable");//获取ResultSet
 			while(rs.next()){
 				System.out.println("Before**");
 				System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3)+" "+rs.getInt(4)+" "+rs.getString(5)+" "+rs.getInt(6));

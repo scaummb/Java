@@ -1,6 +1,5 @@
 package com.code.algorithm;
 
-
 public class BubbleSort {
 	public static void main(String[] args){
 		int[] a = {88,66,999,45,22,1,35,68,88,44,11,99,85,253,44,56};
@@ -18,7 +17,6 @@ public class BubbleSort {
 		System.out.println("\n Bubbletest.sort()");
 		Bubbletest.sort();
 	}
-
 }
 class Bubbletest{
 	public static void sort(){
@@ -38,6 +36,7 @@ class Bubbletest{
 		}
 	}
 }
+
 class Bubble{
 	public static int[] sort(int[] arr){
 		int temp = 0;
@@ -57,8 +56,7 @@ class Bubble{
 		for(int i : arr){
 			System.out.print(i+",");
 		}
-//		System.out.println("");
-		System.out.println("\nforeach over..");
+		System.out.println("\n foreach over..");
 		return arr;
 	}
 }

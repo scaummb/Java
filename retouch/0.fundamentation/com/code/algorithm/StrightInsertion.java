@@ -14,7 +14,6 @@ public class StrightInsertion {
 		sis.strightinsertion(arr);
 		System.out.println("********");
 //		strightinsertion(arr);
-		
 	}
 	public void a(){}
 	public static void strightinsertion(int [] arr){

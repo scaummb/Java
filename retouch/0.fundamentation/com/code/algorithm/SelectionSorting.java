@@ -4,8 +4,7 @@ class SelectionSort{
 	public static void selectionSort(int[] a){
 		int n = a.length;
 		int lable = 0;
-		//************1-ok
-/*		for (int i = 0; i<n; i++){
+		for (int i = 0; i<n; i++){
 			int k = i;
 			//find out the smallest one.
 			for (int j = i+1;j < n; j++){
@@ -19,7 +18,6 @@ class SelectionSort{
 				a[k] = temp;
 			}
 		}
-*/
 		//**********2-right
         for (int i = 0; i < n; i++) {
             int k = i;
@@ -72,13 +70,10 @@ class SelectionSort{
 	}
 }
 public class SelectionSorting {
-
 	public static void main(String[] args) {
 		SelectionSort ss = new SelectionSort();
 		int[] a = {9,8,7,6,5,4,3,2,1,0};
 //		ss.selectionSort(a);
 		ss.selectionSort2(a);
-		
 	}
-
 }
