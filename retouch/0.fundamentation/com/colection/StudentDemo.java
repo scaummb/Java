@@ -16,7 +16,7 @@ public class StudentDemo {
 		}
 		// 创建学生对象元素
 		Student s1 = new Student("mmb1",23);
-		Student s2 = new Student("mmb2",24);
+		Student s2 = new Student("mmb2",27);
 		Student s3 = new Student("mmb3",25);
 		
 		// 把元素放到数组中
