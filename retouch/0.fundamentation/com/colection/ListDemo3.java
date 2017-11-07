@@ -1,6 +1,8 @@
 package com.colection;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -33,6 +35,27 @@ public class ListDemo3 {
 		System.out.println("then list:"+list);
 		// Object get(int index):根据给定索引，返回元素
 		System.out.println("get: "+list.get(2));
+		
+		test();
 	}
-
+	static void test(){
+		Collection c = new ArrayList();
+		c.add("1A0");
+		c.add(100);
+		System.out.println("------------------");
+		System.out.println("c.size(): "+c.size());
+		System.out.println("c.getClass()"+c.getClass());
+		Iterator it = c.iterator();
+		while(it.hasNext()){
+			if(it.next() instanceof String){
+				System.out.println("Yes");
+			}
+			System.out.println("it.next():"+it.next());
+		}
+//		for(int i =0; i < c.size();i++){
+//			
+//			System.out.println(c[i]);
+//		}
+		
+	}
 }

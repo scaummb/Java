@@ -21,10 +21,10 @@ public class ListDemo4 {
 				 }catch(IndexOutOfBoundsException e){
 					 e.printStackTrace();
 				 }
-	for(int x=0;x<list.size();x++){
-		String s =(String) list.get(x);
-		System.out.println(s);
-	}
+		for(int x=0;x<list.size();x++){
+			String s =(String) list.get(x);
+			System.out.println(s);
+		}
 	}
 
 }
