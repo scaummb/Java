@@ -23,6 +23,9 @@ public class ListDemo2 {
 		list.add(s2);
 		list.add(s3);
 		list.add(s4);
+		//ÄäÃû¶ÔÏó
+//		list.add(new String("mmb"));
+		list.add(new Student("aaa",22));
 		
 		Iterator  it = list.iterator();
 		

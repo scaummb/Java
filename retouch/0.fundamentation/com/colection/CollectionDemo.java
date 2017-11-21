@@ -38,6 +38,7 @@ package com.colection;
  */
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class CollectionDemo {
 
@@ -55,7 +56,7 @@ public class CollectionDemo {
 		
 		System.out.println("size: "+v.size());
 		System.out.println("v:"+v);
-				
+		
 		// boolean remove(Object obj):从集合中移除一个元素
 		v.remove("java");
 		
@@ -72,6 +73,15 @@ public class CollectionDemo {
 		
 		System.out.println("size: "+v.size());
 		System.out.println("v:"+v);
+
+		System.out.println("-------------");
+		Collection c = new ArrayList();
+		c.add("hello ");c.add("jmmv");System.out.println(c.addAll(v));
+		System.out.println(c.toArray());
+		Iterator iii = c.iterator();
+		while(iii.hasNext()){
+			System.out.println(iii.next());
+		}
 	}
 
 }

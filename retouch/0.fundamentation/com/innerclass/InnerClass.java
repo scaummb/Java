@@ -17,27 +17,17 @@ class outerClass3{
 	}
 }
 /*匿名内部类
- * class Frame{}
-class MyFrame extends Frame{
+ * 
+
+class MyFrame extends Frame{		//外部类
 	public MyFrame{
-		addWindowListener(new WindowAdapter(){
+		addWindowListener(new WindowAdapter(){		//匿名内部类WindowAdapter
 			public void windowClosing(WindowEvent e){
 				dispose();
 				System.exit(0);
 				}
 			private void dispose() {}
 		});		
-	}
-	private void addWindowListener(WindowAdapter windowAdapter) {}
 }
 
 */
-
-public class InnerClass {
-
-	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
-
-	}
-
-}
