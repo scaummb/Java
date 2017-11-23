@@ -13,7 +13,8 @@ import com.hibernate.test.Employee;
 public class TestDB {
 
 	public static void main(String[] args) {
-		Configuration config = new Configuration().configure("D:\\eclipse\\stronger\\Java\\src\\com\\hibernate\\test\\hibernatehibernate.cfg.xml");
+//		Configuration config = new Configuration().configure("\\com\\hibernate\\test\\hibernatehibernate.cfg.xml");
+		Configuration config = new Configuration().configure();
 		SessionFactory sessionFactory = config.buildSessionFactory(); 
 		Session session = sessionFactory.openSession();
 		Transaction tx = session.beginTransaction();

@@ -15,7 +15,7 @@
         <!-- <property name="hbm2ddl.auto">update</property> -->
 
         <!--加载所有映射-->
-        <mapping resource="com/hibernate/test/hibernate/Employee.hbm.xml"/>
+        <mapping resource="com.hibernate.test/Employee.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>
