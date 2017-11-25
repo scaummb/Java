@@ -1,7 +1,6 @@
 package srevletTest.test;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +14,7 @@ public class MVCTest extends HttpServlet {
 			throws ServletException, IOException {
 		System.out.println("doGet()...MVCTest");
 		UserJavaBean usb = new UserJavaBean();
-		String xm = ""; String ps = "";
+		String xm = ""; String ps = ""; 
 		xm = request.getParameter("username");
 		ps = request.getParameter("password");
 		usb.setPassword(ps);
