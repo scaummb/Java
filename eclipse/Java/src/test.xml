@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HD>
+    <!--disk 描叙电脑C盘中的信息，下三个属性依次描述分区容量、目录数量、包含的文件数-->
+    <disk name="D">
+    	<capacity>400G</capacity>
+    	<directories>90</directories>
+    	<files>45678</files>
+    </disk>    
+    <!--描叙电脑D盘中的信息-->
+    <disk name="c">
+    	<capacity>100GB</capacity>
+    	<directories>67809</directories>
+    	<files>45678</files>
+    </disk>
+</HD>    
